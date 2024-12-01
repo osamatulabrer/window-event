@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        width: 500px;
+
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        position: fixed ;
+        top: 0;
+        right: 0;
+        background-color: orange;
+    }
+    .box.hide{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .circle{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid green;
+        margin: 20px 0;
+
+
+    }
+</style>
+<body>
+    <div class="box hide">
+
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptates aliquid laudantium at molestias sed, officia optio blanditiis, soluta dolorum culpa maiores ducimus doloremque. Ab, hic? Blanditiis optio inventore aliquid, necessitatibus eos quia porro ad obcaecati dolor, minus assumenda ipsa a ea earum reprehenderit corrupti illo cum saepe praesentium, rem architecto et sint recusandae! Error nesciunt eum perspiciatis atque ipsa laborum iste quam animi dolorem, modi veniam rem quidem, excepturi sapiente porro perferendis officiis esse! Nobis laudantium, excepturi praesentium voluptas sapiente similique at accusantium debitis repellendus ratione ullam dolorum velit modi, fugit quas, possimus maiores aperiam autem quod eos. Ipsam consequatur quis, pariatur ipsum in consequuntur est tempore mollitia ratione inventore voluptatem distinctio odit harum veritatis veniam nesciunt voluptatum temporibus unde suscipit laboriosam reiciendis. Aspernatur cupiditate quae facilis doloremque, ea reprehenderit sapiente explicabo doloribus natus eaque repellat sed corporis, porro laudantium veritatis blanditiis sint rerum! Odio pariatur facilis voluptatem autem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa numquam, vel esse iusto labore sapiente, qui repudiandae hic eius quam dolor deleniti perferendis quibusdam distinctio magnam aut harum aliquid!</h1>
+    <div class="circle"></div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptates aliquid laudantium at molestias sed, officia optio blanditiis, soluta dolorum culpa maiores ducimus doloremque. Ab, hic? Blanditiis optio inventore aliquid, necessitatibus eos quia porro ad obcaecati dolor, minus assumenda ipsa a ea earum reprehenderit corrupti illo cum saepe praesentium, rem architecto et sint recusandae! Error nesciunt eum perspiciatis atque ipsa laborum iste quam animi dolorem, modi veniam rem quidem, excepturi sapiente porro perferendis officiis esse! Nobis laudantium, excepturi praesentium voluptas sapiente similique at accusantium debitis repellendus ratione ullam dolorum velit modi, fugit quas, possimus maiores aperiam autem quod eos. Ipsam consequatur quis, pariatur ipsum in consequuntur est tempore mollitia ratione inventore voluptatem distinctio odit harum veritatis veniam nesciunt voluptatum temporibus unde suscipit laboriosam reiciendis. Aspernatur cupiditate quae facilis doloremque, ea reprehenderit sapiente explicabo doloribus natus eaque repellat sed corporis, porro laudantium veritatis blanditiis sint rerum! Odio pariatur facilis voluptatem autem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa numquam, vel esse iusto labore sapiente, qui repudiandae hic eius quam dolor deleniti perferendis quibusdam distinctio magnam aut harum aliquid!</h1>
+    <script>
+        window.addEventListener('scroll',function(){
+            let scrollTop = window.scrollY;
+            if(scrollTop >= 200){
+                document.querySelector('.box').classList.remove("hide")
+            }else{
+                document.querySelector('.box').classList.add("hide")
+
+            }
+           
+            
+        })
+    </script>
+</body>
+</html>
